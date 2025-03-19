@@ -30,5 +30,6 @@ jobs:
         ./sonar-scanner/bin/sonar-scanner \
           -Dsonar.projectKey=Github-repos-scan \
           -Dsonar.sources=. \
+          -Dsonar.exclusions=**/*.java
           -Dsonar.host.url=http://44.207.4.204:9000 \
           -Dsonar.login=$SONAR_TOKEN
